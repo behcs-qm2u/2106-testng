@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="8780" started-at="2021-06-20T14:57:58 MYT" finished-at="2021-06-20T14:58:07 MYT">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="8780" started-at="2021-06-20T14:57:58 MYT" finished-at="2021-06-20T14:58:07 MYT">
+      <class name="shoppingTest.LoginTestSD">
+        <test-method status="PASS" signature="setup()[pri:0, instance:shoppingTest.LoginTestSD@fad74ee]" name="setup" is-config="true" duration-ms="2282" started-at="2021-06-20T14:57:59 MYT" finished-at="2021-06-20T14:58:01 MYT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="LoginSwagLabs(java.lang.String,java.lang.String)[pri:0, instance:shoppingTest.LoginTestSD@fad74ee]" name="LoginSwagLabs" duration-ms="685" started-at="2021-06-20T14:58:01 MYT" finished-at="2021-06-20T14:58:02 MYT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginSwagLabs -->
+        <test-method status="PASS" signature="AddToCart()[pri:0, instance:shoppingTest.LoginTestSD@fad74ee]" name="AddToCart" duration-ms="209" started-at="2021-06-20T14:58:02 MYT" depends-on-methods="shoppingTest.LoginTestSD.LoginSwagLabs" finished-at="2021-06-20T14:58:02 MYT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCart -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:shoppingTest.LoginTestSD@fad74ee]" name="teardown" is-config="true" duration-ms="5548" started-at="2021-06-20T14:58:02 MYT" finished-at="2021-06-20T14:58:07 MYT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- shoppingTest.LoginTestSD -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
