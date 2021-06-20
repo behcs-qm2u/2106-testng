@@ -30,12 +30,15 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import pages.LoginPage;
+
 
 public class LoginTestSD {
 
 	// to invoke the browser
 	WebDriver driver;
 	
+
 	// 20Jun21 - Extent Report
 	ExtentReports report;
 	ExtentTest test;
@@ -66,12 +69,27 @@ public class LoginTestSD {
 				
 	}
 	
+
+	
+	
+	
+	// 21-06-20 : POM model, actual login page moved
+	// @Test
+	@Test(enabled=false)
+	@Parameters({"username", "password"})
+	public void LoginTestCase(String uname, String pass) {
+	
+		LoginPage loginObj = new LoginPage(driver);
+		loginObj.Login(uname, pass);
+		
+	}
+
 	
 	// Y21-06-19 using parameter, become data-driven test
-	
+	// @Test(enabled=false)
 	@Test
 	@Parameters({"username", "password"})
-	public void LoginSwagLabs(String uname, String pass) {
+	public void LoginTest(String uname, String pass) {
 	
 
 	
@@ -127,15 +145,25 @@ public class LoginTestSD {
 		*/
 	
 	}
-
-
-	@Test(dependsOnMethods="LoginSwagLabs")
+	
+	
+	@Test(dependsOnMethods="LoginTest")
+	
+	// @Test(dependsOnMethods="LoginTestCase")
 	public void AddToCart() {
 		
-
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		System.out.println("In AddToCart()");
 		
+		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='inventory_container']")));
+
+		// Can do extra check : Assert Title appear
+		WebElement Title = driver.findElement(By.xpath("//span[@class='title']"));	
+		String ExpMsg = "PRODUCTS--wrong";
+		String ActMsg = Title.getText();
+		
+		soft.assertEquals(ActMsg, ExpMsg);
+		
 		
 		List<WebElement> CartList = driver.findElements(By.xpath("//button[@class='btn btn_primary btn_small btn_inventory']"));
 		// WebElement CartItem = driver.findElement(By.xpath("//button[@class='btn btn_primary btn_small btn_inventory']"));
@@ -175,7 +203,7 @@ public class LoginTestSD {
 
 
 		// at the end, throw all the assertion here
-		// soft.assertAll();
+		soft.assertAll();
 	
 	
 	}

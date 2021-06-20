@@ -109,7 +109,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="shoppingTest.LoginTestSD" hash-for-method="LoginSwagLabs(standard_user, secret_sauce)">LoginSwagLabs(standard_user, secret_sauce)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="shoppingTest.LoginTestSD" hash-for-method="LoginTest(standard_user, secret_sauce)">LoginTest(standard_user, secret_sauce)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -139,9 +139,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginSwagLabs(standard_user, secret_sauce)">
-                  </a> <!-- LoginSwagLabs(standard_user, secret_sauce) -->
-                  <span class="method-name">LoginSwagLabs</span>
+                  <a name="LoginTest(standard_user, secret_sauce)">
+                  </a> <!-- LoginTest(standard_user, secret_sauce) -->
+                  <span class="method-name">LoginTest</span>
                   <span class="parameters">(standard_user, secret_sauce)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -203,18 +203,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LoginSwagLabs')
+data.setCell(0, 1, 'LoginTest')
 data.setCell(0, 2, 'shoppingTest.LoginTestSD')
-data.setCell(0, 3, 685);
+data.setCell(0, 3, 603);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'AddToCart')
 data.setCell(1, 2, 'shoppingTest.LoginTestSD')
-data.setCell(1, 3, 209);
+data.setCell(1, 3, 219);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 894 ms</span>
+              <span class="suite-total-time">Total running time: 822 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -229,9 +229,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">shoppingTest.LoginTestSD</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">LoginTestCase</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -246,16 +253,18 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">LoginSwagLabs(standard_user, secret_sauce)</span>
-                <span class="method-start">2316 ms</span>
+                <span class="method-name">LoginTest(standard_user, secret_sauce)</span>
+                <span class="method-start">2547 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AddToCart</span>
-                <span class="method-start">3011 ms</span>
+                <span class="method-start">3159 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">teardown</span>
-                <span class="method-start">3223 ms</span>
+                <span class="method-start">3379 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
