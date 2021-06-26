@@ -79,8 +79,8 @@ public class LoginTestSD {
 	@Parameters({"username", "password"})
 	public void LoginTestCase(String uname, String pass) {
 	
-		LoginPage loginObj = new LoginPage(driver);
-		loginObj.Login(uname, pass);
+		LoginPage loginObj = new LoginPage();
+		loginObj.login(uname, pass);
 		
 	}
 
@@ -157,9 +157,10 @@ public class LoginTestSD {
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='inventory_container']")));
 
-		// Can do extra check : Assert Title appear
+		// Can do extra check : Assert page top left title text appear
 		WebElement Title = driver.findElement(By.xpath("//span[@class='title']"));	
-		String ExpMsg = "PRODUCTS--wrong";
+		// String ExpMsg = "PRODUCTS--wrong";
+		String ExpMsg = "PRODUCTS";	// correct msg
 		String ActMsg = Title.getText();
 		
 		soft.assertEquals(ActMsg, ExpMsg);

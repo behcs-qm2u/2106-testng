@@ -1,0 +1,12 @@
+26Jun21
+WebElement from LoginPage.java
+
+	// WebElement LoginLink = driver.findElement(By.linkText("Log in"));
+		
+	// WebElement UserName = driver.findElement(By.name("user_login"));
+
+	// WebElement Password = driver.findElement(By.id("password"));
+	
+	// WebElement Rememberme = driver.findElement(By.className("rememberMe"));
+	
+	// WebElement Login = driver.findElement(By.name("btn_login"));
