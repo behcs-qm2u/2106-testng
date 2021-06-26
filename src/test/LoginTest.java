@@ -24,15 +24,29 @@ import pages.LoginPage;
 
 public class LoginTest extends Baseclass {
 
-	
-	// Y21-06-19 using parameter, become data-driven test
-	@Test
+	@Test(enabled=false)
 	@Parameters({"username", "password"})
 	public void Login(String uname, String pass) {
 	
 		LoginPage obj = new LoginPage();
 		obj.login(uname, pass);
 	
+	}
+	
+	@Test
+	public void LoginTestcase2() {
+		
+		LoginPage obj = new LoginPage();
+		
+		String uname = sheet.getRow(1).getCell(0).getStringCellValue();
+		String pass = sheet.getRow(1).getCell(1).getStringCellValue();
+		
+		System.out.println("LoginTestcase2: uname from xlsx is ["+uname+"]");
+		System.out.println("LoginTestcase2: uname from xlsx is ["+pass+"]");
+		
+		obj.login(uname, pass);
+		
+		
 	}
 
 	

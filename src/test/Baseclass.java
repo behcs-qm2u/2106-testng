@@ -1,7 +1,12 @@
 package test;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -21,26 +26,31 @@ public class Baseclass {
 	
 	SoftAssert soft = new SoftAssert();
 	
+	XSSFWorkbook wbook;
+	XSSFSheet sheet;
+	
 	
 	@BeforeTest
-	public void setup() {
+	public void setup() throws IOException {
 		
-		// Tell location of chrome executable
 		System.setProperty("webdriver.chrome.driver", "chromedriver");
 
-		// to invoke the browser
 		driver = new ChromeDriver();
 
 		driver.get("https://www.simplilearn.com");
 		
-		// Maximize the browser
 		driver.manage().window().maximize();
 		
-		// set default timeout for all actions
 		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
-		// driver.close();
 
 		report = new ExtentReports("ExtentReport.html");
+		
+		FileInputStream fis = new FileInputStream("data/exceldata.xlsx");
+		
+		wbook = new XSSFWorkbook(fis);
+		sheet = wbook.getSheetAt(0);
+		
+		
 		
 		// System.out.println("finish setup()");
 				

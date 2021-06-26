@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Sanity Suite" duration-ms="13646" started-at="2021-06-26T13:33:30 MYT" finished-at="2021-06-26T13:33:44 MYT">
+  <suite name="Default suite" duration-ms="12900" started-at="2021-06-26T13:53:11 MYT" finished-at="2021-06-26T13:53:24 MYT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="13646" started-at="2021-06-26T13:33:30 MYT" finished-at="2021-06-26T13:33:44 MYT">
+    <test name="Default test" duration-ms="12900" started-at="2021-06-26T13:53:11 MYT" finished-at="2021-06-26T13:53:24 MYT">
       <class name="test.LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:test.LoginTest@36b4cef0]" name="setup" is-config="true" duration-ms="3541" started-at="2021-06-26T13:33:30 MYT" finished-at="2021-06-26T13:33:33 MYT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.LoginTest@3234e239]" name="setup" is-config="true" duration-ms="3475" started-at="2021-06-26T13:53:11 MYT" finished-at="2021-06-26T13:53:15 MYT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Login(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@36b4cef0]" name="Login" duration-ms="9547" started-at="2021-06-26T13:33:34 MYT" finished-at="2021-06-26T13:33:43 MYT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abc@xyz.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[unknown]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="LoginTestcase2()[pri:0, instance:test.LoginTest@3234e239]" name="LoginTestcase2" duration-ms="8995" started-at="2021-06-26T13:53:15 MYT" finished-at="2021-06-26T13:53:24 MYT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:test.LoginTest@36b4cef0]" name="teardown" is-config="true" duration-ms="485" started-at="2021-06-26T13:33:43 MYT" finished-at="2021-06-26T13:33:44 MYT">
+        </test-method> <!-- LoginTestcase2 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:test.LoginTest@3234e239]" name="teardown" is-config="true" duration-ms="391" started-at="2021-06-26T13:53:24 MYT" finished-at="2021-06-26T13:53:24 MYT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- test.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Sanity Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
