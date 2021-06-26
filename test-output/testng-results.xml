@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12900" started-at="2021-06-26T13:53:11 MYT" finished-at="2021-06-26T13:53:24 MYT">
+  <suite name="Default suite" duration-ms="12005" started-at="2021-06-26T15:16:36 MYT" finished-at="2021-06-26T15:16:48 MYT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12900" started-at="2021-06-26T13:53:11 MYT" finished-at="2021-06-26T13:53:24 MYT">
-      <class name="test.LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:test.LoginTest@3234e239]" name="setup" is-config="true" duration-ms="3475" started-at="2021-06-26T13:53:11 MYT" finished-at="2021-06-26T13:53:15 MYT">
+    <test name="Default test" duration-ms="12005" started-at="2021-06-26T15:16:36 MYT" finished-at="2021-06-26T15:16:48 MYT">
+      <class name="shoppingTest.LoginTestSD">
+        <test-method status="PASS" signature="setup()[pri:0, instance:shoppingTest.LoginTestSD@36b4cef0]" name="setup" is-config="true" duration-ms="8427" started-at="2021-06-26T15:16:36 MYT" finished-at="2021-06-26T15:16:45 MYT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="LoginTestcase2()[pri:0, instance:test.LoginTest@3234e239]" name="LoginTestcase2" duration-ms="8995" started-at="2021-06-26T13:53:15 MYT" finished-at="2021-06-26T13:53:24 MYT">
+        <test-method status="PASS" signature="LoginTestCase2()[pri:0, instance:shoppingTest.LoginTestSD@36b4cef0]" name="LoginTestCase2" duration-ms="1442" started-at="2021-06-26T15:16:45 MYT" finished-at="2021-06-26T15:16:46 MYT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTestcase2 -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:test.LoginTest@3234e239]" name="teardown" is-config="true" duration-ms="391" started-at="2021-06-26T13:53:24 MYT" finished-at="2021-06-26T13:53:24 MYT">
+        </test-method> <!-- LoginTestCase2 -->
+        <test-method status="PASS" signature="AddToCartTest()[pri:0, instance:shoppingTest.LoginTestSD@36b4cef0]" name="AddToCartTest" duration-ms="655" started-at="2021-06-26T15:16:46 MYT" depends-on-methods="shoppingTest.LoginTestSD.LoginTestCase2" finished-at="2021-06-26T15:16:47 MYT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCartTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:shoppingTest.LoginTestSD@36b4cef0]" name="teardown" is-config="true" duration-ms="1326" started-at="2021-06-26T15:16:47 MYT" finished-at="2021-06-26T15:16:48 MYT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- test.LoginTest -->
+      </class> <!-- shoppingTest.LoginTestSD -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

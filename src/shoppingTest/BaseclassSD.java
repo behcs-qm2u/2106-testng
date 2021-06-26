@@ -1,4 +1,4 @@
-package test;
+package shoppingTest;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -18,7 +18,7 @@ import org.testng.asserts.SoftAssert;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
-public class Baseclass {
+public class BaseclassSD {
 
 	public static WebDriver driver;
 	public static ExtentReports report;
@@ -37,15 +37,16 @@ public class Baseclass {
 
 		driver = new ChromeDriver();
 
-		driver.get("https://www.simplilearn.com");
+		driver.get("https://www.saucedemo.com");
+
 		
 		driver.manage().window().maximize();
 		
 		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
 
-		report = new ExtentReports("ExtentReport.html");
+		report = new ExtentReports("ExtentReportSD.html");
 		
-		FileInputStream fis = new FileInputStream("data/exceldata.xlsx");
+		FileInputStream fis = new FileInputStream("data/exceldatasd.xlsx");
 		
 		wbook = new XSSFWorkbook(fis);
 		sheet = wbook.getSheetAt(0);

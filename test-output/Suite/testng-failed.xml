@@ -7,9 +7,9 @@
     <classes>
       <class name="shoppingTest.LoginTestSD">
         <methods>
-          <include name="AddToCart"/>
-          <include name="LoginSwagLabs"/>
           <include name="setup"/>
+          <include name="LoginTestCase2"/>
+          <include name="AddToCartTest"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- shoppingTest.LoginTestSD -->
